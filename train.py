@@ -8,23 +8,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 import sys
-import time
 from datetime import datetime, timedelta
 import pydirectinput
-#from PIL import Image 
-# import pytesseract
-# def checkprice():
-#     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-#     im = pyautogui.screenshot(region=(298,667, 200,45))
-#     im.save('123.png')
-#     img = Image.open("123.png")
-#     text = pytesseract.image_to_string(img, lang='eng')
-#     #text.split('\n')
-#     #ans = text.split('\n')[0].replace(",","")
-#     #ans = ans.split('\n')[0].replace(".","")
-#     #ans = re.sub(r'\D', '', ans)
-#     print(text)
-#     return text
+
 driver = webdriver.Chrome()
 # 設定隱式等待時間為10秒
 driver.implicitly_wait(1000)
